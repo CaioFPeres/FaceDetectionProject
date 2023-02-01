@@ -1,0 +1,25 @@
+Pega 2x a area do rosto, se for maior que 250x250:
+
+- scale down
+
+se for menor que 250x250:
+
+- pega uma area de 250x250. Se não tiver area suficiente na foto:
+    - add black padding
+
+
+
+O que pode ser feito tb: tentar deixar todos os rostos com as mesmas dimensões, além de apenas pensar na dimensão total da foto (que é 250x250)
+Ou seja, fazer downscale/upscale da foto para padronizar todos os rostos com as mesmas dimensões (a fim de conseguir uma convergencia melhor no treinamento).
+Ou seja, pegar uma área de modo que no downscale/upscale para 250x250 o rosto atinja determinada dimensão fixa e constante.
+
+
+nova ideia:
+
+tentar centralizar o bounding box do rosto:
+    - pega o meio do segmento x e y e coloca em 125x125, ou o mais proximo disso
+    - para que fique uniforme, muito provavelmente vai ter que fazer resize no rosto de novo
+
+
+nova ideia da nova ideia:
+    - tentar provocar 2 grupos majoritarios de tamanho de rosto, como no dataset bom (45% do dataset sendo 99x99, 37% sendo 83x83)

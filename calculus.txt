@@ -1,0 +1,10 @@
+tam do rosto: 221
+
+a foto tem: 423
+
+resize para 250:
+
+tamTotal - resized -> perda
+
+starting position do rosto - perda -> nova posicao do rosto
+final position (start + tamRosto) - perda -> nova final position

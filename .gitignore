@@ -1,0 +1,5 @@
+/img_celeba
+/splittedTraining/img_celeba
+/splittedTraining/validate_dlib
+/splittedTraining/*.xml
+list_bbox_celeba.csv
