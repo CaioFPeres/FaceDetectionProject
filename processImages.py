@@ -236,5 +236,5 @@ if __name__ == "__main__":
 
 
     training = newDocRoot.toprettyxml()
-    with open("splittedTraining/training" + sys.argv[3] + ".xml", "w") as f:
+    with open("splittedTraining/training.xml", "w") as f:
         f.write(training)
