@@ -3,8 +3,10 @@ This is a face detection project made with Dlib in C++, along with pre processin
 
 This project was done aiming Celeb Faces dataset (CelebA), but can be used to any object detection dataset, since it will just resize and crop based on the bounding box coordinates.
 
-The preliminary results with just using the first 5000 processed images from CelebA were:
+The preliminary results with just using the first 40000 processed images from CelebA were (separated in batches of 5000 images):
 
-training results: 0.999171   0.9638 0.963757 
+training results: 0.998364   0.9762 0.975864 
 
-testing results:  0.998778 0.969925  0.96879 
+testing results:  0.999193 0.980214  0.98005 
+
+(Precision, Recall, Average Precision)
